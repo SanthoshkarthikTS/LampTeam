@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+    <head>  
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <link rel="icons" href="../popeye.png">      
+            <script type="text/javascript" src="../js/Registration.js"></script> 	
+		    <link rel="stylesheet" type="text/css" href="../css/Registration.css">
+            <link rel="stylesheet" type="text/css" href="../css/home.css">
+            <script type="text/javascript" src="engine1/jquery.js"></script>
+    </head>
+    <body>
+          <form action = "Register.php" name = "form" method = "POST">
+                <h1>User Registration Form</h1>
+                <table class="d">
+                    <tr class="a">
+                        <td>First Name<br><input name = 'first_name' id="FirstName" type = "text" title="FirstName" placeholder="FirstName"><br>
+                        <div id="FirstName_error"></div>
+                        </td>
+			            <td>Last Name<br><input name = 'last_name' id = "LastName" type = "text" title = "LastName" placeholder = "LastName"><br>
+                        <div id="LastName_error"></div>
+                        </td>
+                    </tr>
+                    <tr class="a">                    
+                        <td>Password<br>
+                        <input name = 'password' id="password" type="password" title="password" placeholder="password"><br><br>
+                        <div id="password_error"></div>
+                        </td>
+                        <td>Confirm Password<br>
+                        <input id="confirmpassword" type="password" name="pass2" title="Confirm Password" placeholder="confirm password" >
+                        <div id="confirmpassword_error"></div>
+                        </td>
+                    </tr>
+                    <tr class="a">
+                        <td>Gender<input id="radio" type="radio" name="gender">Male<input id="radio" type="radio" name="gender">Female
+                        <div id="gender_error"></div>
+                        </td>
+                        <td>D.O.B.<input id="Dateofbirth" type="date" name="dob" title="DOB">
+                        <div id="dob_error"></div>
+                        </td>
+                    </tr> 
+                    <tr class="a">  
+                        <td>Email-id<br><input name = "emailid" id="email" type="text" title="Email-id" placeholder="email-id"><br>
+                        <div id="email_error"></div>
+                        </td>
+                        <td>Mobile<br><input name = "mobileno" id="mobile" title="Mobile" placeholder="mobile"><br>
+                        <div id="mobilenumber_error"></div>
+                        </td>     
+                    </tr>
+                    <tr class="a">
+                        <td>Nationality<input name = "nationality" id="checkbox" type="checkbox" value="indian" title="Indian">Indian<input id="checkbox" type="checkbox" name="Nationality" value="others" title="Others">Other
+                        <div id="box_error"></div>
+                        </td>
+                        <td>Address</p>
+                        <textarea name = "address" id="address" rows="4" cols="50" title="Address" placeholder="address"></textarea>
+                        <div id="textarea_error"></div>
+                        </td>  
+                    </tr>
+                    <tr class="a">
+                         <td>State<br>         
+                            <select name = "state" id="state" title="State">
+                                <option>--Select your state--</option>
+                                <option>TamilNadu</option>
+                                <option>Gujarat</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Karnataka</option>
+                                <option>Other</option>
+                            </select><br><br>
+                        <div id="state_error"></div>
+                        </td>
+                        <td>City
+                            <select name = "city" id="city" title="City">
+                                <option>--Select your City--</option>
+                                <option value="Madurai">Madurai</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                            </select>
+                        <div id="city_error"></div>
+                        </td> 
+                    </tr>
+                    <tr class="a">
+                        <td>Security Question<br>
+                            <select name = "securityqn" id="question" title="Security Question">
+                               <option>--Select your question--</option>
+                               <option value="What is your Mother's Name">What is your Mother's Name</option>
+                               <option value="What is your Employment Number">What is your Employment Number</option>
+                               <option value="What is your favourite color">What is your favourite color</option>
+                            </select>
+                        <div id="question_error"></div>
+                        </td>
+                        <td>Enter your answer<br><input name = "ans" id="answer" type="text" title="Enter your answer" placeholder="answer"><br><br>
+                        <div id="answer_error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" onclick = "return validate()" value= "submit" name = "submit" title="Submit"></td>
+                        <td><input type="reset" value="reset"title="Reset"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" formaction="jqueryhome.html" value="home"></td>
+                    </tr>   
+              </table>
+ 	     </form> 
+    </body>
+</html>
