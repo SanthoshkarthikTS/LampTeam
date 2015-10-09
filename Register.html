@@ -1,0 +1,113 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel = "icons" href = "../popeye.png">      
+		<script type = "text/javascript" src = "Jquery/Register.js"></script> 	
+ 		<link rel = "stylesheet" type = "text/css" href = "css/Register.css"> 
+		<script type = "text/javascript" src = "engine1/jquery.js"></script>
+	</head>
+	<body>
+		<form action = "Register.php" method = "POST" id ="form"> 
+			 <h1>User Registration Form</h1>
+			 <table class = "Border">
+			 	<tr class = "Fields">	 	
+					<td>First Name<br>
+						<input id = 'firstName' name = 'firstName' id = "FirstName" type = "text" title="FirstName" placeholder = "FirstName"><br>
+                        <div id = "FirstName_error"></div>
+					</td>
+					<td>Last Name<br> 
+						<input id = 'lastName' name = 'last_name' id = "LastName" type = "text" title = "LastName" placeholder = "LastName"><br>
+						<div id = "LastName_error"></div>
+					</td> 
+				</tr>
+				<tr class = "Fields">                    
+					<td>Password<br>
+						<input id = 'password' name = 'password' type = "password" title = "password" placeholder = "password"><br><br>
+						<div id = "password_error"></div>
+					</td>
+					<td>Confirm Password<br>
+						<input id = 'confirmPassworderror' type = "password" name = "pass2" title = "Confirm Password" placeholder = "confirm password">
+						<div id = "confirmpassword_error"></div>
+					</td>
+				</tr>
+				<tr class = "Fields">
+					<td>Gender
+						<input id = 'Gender'  type = "radio" name = "gender">Male
+						<input id = 'Gender'  type = "radio" name = "gender">Female
+						<div class = "gender_error"></div>
+					</td>
+					<td>D.O.B.
+						<input id = "Dateofbirth" type = "date" name = "dob" title = "DOB">
+						<div id = "dob_error"></div>
+					</td>
+				</tr> 
+				<tr class = "Fields">  
+					<td>Email-id<br>
+						<input id = 'EmailId' name = "emailid"  type = "text" title = "Email-id" placeholder = "email-id"><br>
+						<div id = "email_error"></div>
+					</td>
+					<td>Mobile<br>
+						<input id = 'Mobile' name = "mobileno"  title = "Mobile" placeholder = "mobile"><br>
+						<div id = "mobilenumber_error"></div>
+					</td>     
+				</tr>
+				<tr class = "Fields">
+					<td>Nationality
+						<input id = 'checkBox' name = "nationality" type = "checkbox" value = "Indian" title = "Indian">Indian
+						<input id = 'checkBox' type = "checkbox" name = "nationality" value = "others" title = "Others">Other
+						<div id = "checkBox_error"></div>
+					</td>
+					<td>Address<br><br>
+						<textarea id = 'Addressbox' name = "address" id="address" rows="4" cols="50" title="Address" placeholder="address"></textarea>
+						<div id = "Address_error"></div>
+					</td>  
+				</tr>
+				<tr class = "Fields">
+					<td>State<br>         
+						<select id = 'selectState' name = "state" title = "state">
+							<option value = "">--Select your state--</option>
+							<option value = "TamilNadu">TamilNadu</option>
+							<option value = "Gujarat">Gujarat</option>
+							<option value = "Andhra Pradesh">Andhra Pradesh</option>
+							<option value = "Karnataka">Karnataka</option>
+							<option value = "OtherState">OtherState</option>
+						</select>
+						<div id = "state_error"></div>
+					</td>
+					<td>City<br>
+						<select id = 'selectCity' name = "city" title = "City">
+							<option value = "">--Select your City--</option>
+							<option value = "Madurai">Madurai</option>
+							<option value = "Chennai">Chennai</option>
+							<option value = "Bangalore">Bangalore</option>
+							<option value = "Hyderabad">Hyderabad</option>
+							<option value = "Other">Other</option>option>
+						</select>
+						<div id = "city_error"></div>
+					</td> 
+				</tr>
+				<tr class = "Fields">
+					<td>Security Question<br>
+						<select id = 'selectSecurityQuestion' name = "securityqn" title = "Security Question">
+							<option value = "">--Select your question--</option>
+							<option value = "What is your Mother's Name">What is your Mother's Name</option>
+							<option value = "What is your Employment Number">What is your Employment Number</option>
+							<option value = "What is your favourite color">What is your favourite color</option>
+						</select>
+						<div id = "securityQuestion_error"></div>
+					</td>
+					<td>Enter your answer<br>
+						<input id = 'Answer' name = "ans"  type = "text" title = "Enter your answer" placeholder = "answer">
+						<div id = "Answer_error"></div>
+					</td>
+				</tr>
+				<tr>
+					<td><input id = "submit" onclick = "return check();" type = "submit" value = "submit" name = "submit" title = "Submit"></td>
+					<td><input type = "reset" value = "reset" title = "Reset"></td>
+				</tr>
+			</table>
+		</form> 
+	</body>
+</html>
